@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                /* outline: 1px solid orange; */
+        }
+      .container {background-color: rgb(94, 94, 94);
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+      }
+      .boxes{
+            display: flex;
+            width: 302px;
+            height: 300px;
+            gap: 1px;
+            flex-wrap: wrap;
+      }
+      button{
+        height: 100px;
+        width:100px;
+        background-color: teal;
+        border: 1px solid black;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5rem;
+        transition: background 0.5s;
+      }
+      button:hover{
+            background: rgb(51, 51, 51);
+      }
+      #reset {
+        height: 50px;
+      }
+      h1{
+        color:aquamarine;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="turn">Turn: O</h1>
+      <div class="boxes">
+        <button id="btn1" value="100"></button>
+        <button id="btn2" value="100"></button>
+        <button id="btn3" value="100"></button>
+
+        <button id="btn4" value="100" ></button>
+        <button id="btn5" value="100"></button>
+        <button id="btn6" value="100"></button>
+
+        <button id="btn7" value="100"></button>
+        <button id="btn8" value="100"></button>
+        <button id="btn9" value="100"></button>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+    <script src="tac.js"></script>
+  </body>
+</html>
